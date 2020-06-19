@@ -1,0 +1,47 @@
+{
+  "defaultLocale": "en-us",
+  "cognitiveModels": {
+    "en-us": {
+      "dispatchModel": {
+        "appid": "1c43a0e7-a247-4e47-873f-921471796124",
+        "region": "eastus",
+        "version": "Dispatch",
+        "authoringRegion": "westus",
+        "name": "WeCloudHeroesBoten-us_Dispatch",
+        "authoringkey": "2c4e52f1a1384df3885a91540625499e",
+        "type": "dispatch",
+        "subscriptionkey": "08e40931d4e34b13bdef63392ee12e1e"
+      },
+      "languageModels": [
+        {
+          "appid": "3ca9ff5c-1d69-454d-bac6-1dfbbefa75cf",
+          "endpoint": "https://wecloudheroesbot-luisauthoring-ajkllbu.cognitiveservices.azure.com/",
+          "version": "0.1",
+          "name": "WeCloudHeroesBoten-us_General",
+          "region": "eastus",
+          "authoringkey": "2c4e52f1a1384df3885a91540625499e",
+          "id": "General",
+          "subscriptionkey": "08e40931d4e34b13bdef63392ee12e1e"
+        }
+      ],
+      "knowledgebases": [
+        {
+          "endpointKey": "f1a5b327-d241-4bbb-8d64-03bb7cb106b9",
+          "name": "Chitchat",
+          "kbId": "2023de52-b1f6-43e0-bd88-071df5774afc",
+          "hostname": "https://wecloudheroesbot-qnahost-ajkllbu.azurewebsites.net",
+          "subscriptionKey": "7895510604ce4039bf75d09f185efb78",
+          "id": "Chitchat"
+        },
+        {
+          "endpointKey": "f1a5b327-d241-4bbb-8d64-03bb7cb106b9",
+          "name": "Faq",
+          "kbId": "791d27ba-e15a-48dd-8410-feb68d2d0b56",
+          "hostname": "https://wecloudheroesbot-qnahost-ajkllbu.azurewebsites.net",
+          "subscriptionKey": "7895510604ce4039bf75d09f185efb78",
+          "id": "Faq"
+        }
+      ]
+    }
+  }
+}

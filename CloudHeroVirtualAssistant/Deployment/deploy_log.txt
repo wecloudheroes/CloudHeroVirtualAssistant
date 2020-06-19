@@ -1,0 +1,622 @@
+{
+  "error": null,
+  "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Resources/deployments/template",
+  "name": "template",
+  "properties": {
+    "correlationId": "be2bb419-b583-4944-b50e-6d752aaf305a",
+    "debugSetting": null,
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.DocumentDB/databaseAccounts/wecloudheroesbotajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "wecloudheroesbotajkllbu",
+            "resourceType": "Microsoft.DocumentDB/databaseAccounts"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.DocumentDB/databaseAccounts/wecloudheroesbotajkllbu/sqlDatabases/botstate-db",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "wecloudheroesbotajkllbu/botstate-db",
+        "resourceType": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/serverfarms/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Web/serverfarms"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-ajkllbu",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Web/sites"
+          },
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Insights/components/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.BotService/botServices/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-ajkllbu",
+        "resourceType": "Microsoft.BotService/botServices"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-luisruntime-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-luisruntime-ajkllbu",
+            "resourceType": "Microsoft.CognitiveServices/accounts"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-luisauthoring-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-luisauthoring-ajkllbu",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/Sites/WeCloudHeroesBot-qnahost-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-qnahost-ajkllbu",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Search/searchServices/wecloudheroesbot-search-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "wecloudheroesbot-search-ajkllbu",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/microsoft.insights/components/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "microsoft.insights/components"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-qna-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-qna-ajkllbu",
+        "resourceType": "Microsoft.CognitiveServices/accounts"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/serverFarms/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Web/serverFarms"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-qnahost-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-qnahost-ajkllbu",
+        "resourceType": "Microsoft.Web/sites"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/Sites/WeCloudHeroesBot-qnahost-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-qnahost-ajkllbu",
+            "resourceType": "Microsoft.Web/Sites"
+          },
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Insights/components/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Insights/components"
+          },
+          {
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Search/searchServices/wecloudheroesbot-search-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "wecloudheroesbot-search-ajkllbu",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "actionName": "listAdminKeys",
+            "apiVersion": "2015-08-19",
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Search/searchServices/wecloudheroesbot-search-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "wecloudheroesbot-search-ajkllbu",
+            "resourceType": "Microsoft.Search/searchServices"
+          },
+          {
+            "apiVersion": "2015-05-01",
+            "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Insights/components/WeCloudHeroesBot-ajkllbu",
+            "resourceGroup": "WeCloudHeroesBot",
+            "resourceName": "WeCloudHeroesBot-ajkllbu",
+            "resourceType": "Microsoft.Insights/components"
+          }
+        ],
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-qnahost-ajkllbu/config/appsettings",
+        "resourceGroup": "WeCloudHeroesBot",
+        "resourceName": "WeCloudHeroesBot-qnahost-ajkllbu/appsettings",
+        "resourceType": "Microsoft.Web/sites/config"
+      }
+    ],
+    "duration": "PT0S",
+    "mode": "Incremental",
+    "onErrorDeployment": null,
+    "outputs": null,
+    "parameters": {
+      "appInsightsLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "appInsightsName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "appServicePlanName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "appServicePlanSku": {
+        "type": "Object",
+        "value": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      },
+      "botServiceName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "botServiceSku": {
+        "type": "String",
+        "value": "S1"
+      },
+      "botWebAppName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "contentModeratorLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "contentModeratorName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-cm-ajkllbu"
+      },
+      "contentModeratorSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "cosmosDbDatabaseName": {
+        "type": "String",
+        "value": "botstate-db"
+      },
+      "cosmosDbDatabaseThroughput": {
+        "type": "Int",
+        "value": 400
+      },
+      "cosmosDbName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisAuthoringLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "luisAuthoringName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-luisauthoring-ajkllbu"
+      },
+      "luisAuthoringSku": {
+        "type": "String",
+        "value": "F0"
+      },
+      "luisRuntimeLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "luisRuntimeName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-luisruntime-ajkllbu"
+      },
+      "luisRuntimeSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "microsoftAppId": {
+        "type": "String",
+        "value": "da65a1d0-558e-4482-b5e5-e20b52b2f13d"
+      },
+      "microsoftAppPassword": {
+        "type": "String",
+        "value": "Wecloudheroes@2020"
+      },
+      "name": {
+        "type": "String",
+        "value": "WeCloudHeroesBot"
+      },
+      "qnaMakerSearchLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "qnaMakerSearchName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-search-ajkllbu"
+      },
+      "qnaMakerSearchSku": {
+        "type": "String",
+        "value": "standard"
+      },
+      "qnaMakerServiceLocation": {
+        "type": "String",
+        "value": "westus"
+      },
+      "qnaMakerServiceName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-qna-ajkllbu"
+      },
+      "qnaMakerServiceSku": {
+        "type": "String",
+        "value": "S0"
+      },
+      "qnaMakerWebAppLocation": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "qnaMakerWebAppName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-qnahost-ajkllbu"
+      },
+      "resourceTagName": {
+        "type": "String",
+        "value": "bot"
+      },
+      "resourceTagValue": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "WeCloudHeroesBot-ajkllbu"
+      },
+      "suffix": {
+        "type": "String",
+        "value": "ajkllbu"
+      },
+      "useContentModerator": {
+        "type": "Bool",
+        "value": true
+      },
+      "useCosmosDb": {
+        "type": "Bool",
+        "value": true
+      },
+      "useLuisAuthoring": {
+        "type": "Bool",
+        "value": true
+      },
+      "useStorage": {
+        "type": "Bool",
+        "value": true
+      }
+    },
+    "parametersLink": null,
+    "providers": [
+      {
+        "id": null,
+        "namespace": "Microsoft.Resources",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "deployments"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.DocumentDB",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "databaseAccounts/sqlDatabases"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Storage",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "storageAccounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Web",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "serverFarms"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "sites"
+          },
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              null
+            ],
+            "properties": null,
+            "resourceType": "sites/config"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Insights",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "components"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.BotService",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "global"
+            ],
+            "properties": null,
+            "resourceType": "botServices"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.CognitiveServices",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus",
+              "westus"
+            ],
+            "properties": null,
+            "resourceType": "accounts"
+          }
+        ]
+      },
+      {
+        "id": null,
+        "namespace": "Microsoft.Search",
+        "registrationPolicy": null,
+        "registrationState": null,
+        "resourceTypes": [
+          {
+            "aliases": null,
+            "apiVersions": null,
+            "capabilities": null,
+            "locations": [
+              "eastus"
+            ],
+            "properties": null,
+            "resourceType": "searchServices"
+          }
+        ]
+      }
+    ],
+    "provisioningState": "Succeeded",
+    "template": null,
+    "templateHash": "13237030577887299400",
+    "templateLink": null,
+    "timestamp": "2020-06-19T06:43:16.453619+00:00",
+    "validatedResources": [
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Resources/deployments/3822b5f4-d098-4b57-9ee6-3bee686aec4c",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.DocumentDB/databaseAccounts/wecloudheroesbotajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.DocumentDB/databaseAccounts/wecloudheroesbotajkllbu/sqlDatabases/botstate-db",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Storage/storageAccounts/wecloudheroesbotajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/serverFarms/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Insights/components/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.BotService/botServices/WeCloudHeroesBot-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-cm-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-luisruntime-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-luisauthoring-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.CognitiveServices/accounts/WeCloudHeroesBot-qna-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Search/searchServices/wecloudheroesbot-search-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-qnahost-ajkllbu",
+        "resourceGroup": "WeCloudHeroesBot"
+      },
+      {
+        "id": "/subscriptions/ca4027ed-c99b-438b-8d6c-a48c126611b0/resourceGroups/WeCloudHeroesBot/providers/Microsoft.Web/sites/WeCloudHeroesBot-qnahost-ajkllbu/config/appsettings",
+        "resourceGroup": "WeCloudHeroesBot"
+      }
+    ]
+  },
+  "resourceGroup": "WeCloudHeroesBot",
+  "type": "Microsoft.Resources/deployments"
+}
+{
+  "applicationInsights": {
+    "type": "Object",
+    "value": {
+      "InstrumentationKey": "52f6e2f0-60a5-4b9e-82b0-510ff674f159"
+    }
+  },
+  "blobStorage": {
+    "type": "Object",
+    "value": {
+      "connectionString": "DefaultEndpointsProtocol=https;AccountName=wecloudheroesbotajkllbu;AccountKey=HZ7qduSZaU0lqLdDr8I+/zUkouZlxoSFJF0zSf/Z9hqrtJlS37u73IrszvqKn96A10ae6p36WsWdzQ+clracWA==;EndpointSuffix=core.windows.net",
+      "container": "transcripts"
+    }
+  },
+  "botWebAppName": {
+    "type": "String",
+    "value": "WeCloudHeroesBot-ajkllbu"
+  },
+  "contentModerator": {
+    "type": "Object",
+    "value": {
+      "key": "31aab93f0e0a441c8afeea949ef7777b"
+    }
+  },
+  "cosmosDb": {
+    "type": "Object",
+    "value": {
+      "authKey": "4acBdJLFIgFCDuW3oa4sML3m78s0LENWGmqdcOXcAgRSwxguxH8eP4iaYRGN2MHpFjTNqGZTZHhZD3zBmLRudw==",
+      "containerId": "WeCloudHeroesBot-state",
+      "cosmosDBEndpoint": "https://wecloudheroesbotajkllbu.documents.azure.com:443/",
+      "databaseId": "botstate-db"
+    }
+  },
+  "luis": {
+    "type": "Object",
+    "value": {
+      "accountName": "WeCloudHeroesBot-luisruntime-ajkllbu",
+      "authoringKey": "2c4e52f1a1384df3885a91540625499e",
+      "authoringRegion": "westus",
+      "endpoint": "https://wecloudheroesbot-luisauthoring-ajkllbu.cognitiveservices.azure.com/",
+      "key": "08e40931d4e34b13bdef63392ee12e1e",
+      "region": "eastus"
+    }
+  },
+  "qnaMaker": {
+    "type": "Object",
+    "value": {
+      "endpoint": "https://wecloudheroesbot-qnahost-ajkllbu.azurewebsites.net",
+      "key": "7895510604ce4039bf75d09f185efb78"
+    }
+  },
+  "resourceGroupName": {
+    "type": "String",
+    "value": "WeCloudHeroesBot"
+  }
+}

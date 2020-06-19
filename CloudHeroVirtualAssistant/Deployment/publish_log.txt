@@ -1,0 +1,32 @@
+
+Welcome to .NET Core 3.1!
+---------------------
+SDK Version: 3.1.301
+
+Telemetry
+---------
+The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+
+Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+C:\Program Files\dotnet\sdk\3.1.301\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(151,5): warning NETSDK1080: A PackageReference to Microsoft.AspNetCore.App is not necessary when targeting .NET Core 3.0 or higher. If Microsoft.NET.Sdk.Web is used, the shared framework will be referenced automatically. Otherwise, the PackageReference should be replaced with a FrameworkReference. [C:\Sachin\2020\Azure\CloudHeroVirtualAssistant\CloudHeroVirtualAssistant\CloudHeroVirtualAssistant.csproj]
+C:\Program Files\dotnet\sdk\3.1.301\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.Sdk.DefaultItems.targets(151,5): warning NETSDK1080: A PackageReference to Microsoft.AspNetCore.App is not necessary when targeting .NET Core 3.0 or higher. If Microsoft.NET.Sdk.Web is used, the shared framework will be referenced automatically. Otherwise, the PackageReference should be replaced with a FrameworkReference. [C:\Sachin\2020\Azure\CloudHeroVirtualAssistant\CloudHeroVirtualAssistant\CloudHeroVirtualAssistant.csproj]
+Getting scm site credentials for zip deployment
+AADSTS50076: Due to a configuration change made by your administrator, or because you moved to a new location, you must use multi-factor authentication to access '797f4846-ba00-4fd7-ba43-dac1f8f63013'.
+System.Management.Automation.RemoteException
+Trace ID: dfb08476-8d26-4819-a54e-63d57a024500
+System.Management.Automation.RemoteException
+Correlation ID: 33e301a3-5576-4e13-94da-a62c138a0466
+System.Management.Automation.RemoteException
+Timestamp: 2020-06-19 06:59:21Z
